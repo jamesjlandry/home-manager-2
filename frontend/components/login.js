@@ -6,9 +6,6 @@ import { StyleSheet, Text, View, TextInput,} from 'react-native';
 
 const Login = ({ navigation })  => {
 
-    
-    
-    
    
       const [email, setEmail] = React.useState('');
       const [pass, setPass] = React.useState('');

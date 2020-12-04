@@ -15,7 +15,10 @@ const Stack = createStackNavigator(
   }
 )
 
-export default createAppContainer(AppNavigator);
+
+export default function App() {
+  return <NavigationContainer>{/*...*/}</NavigationContainer>;
+}
 
 
 const styles = StyleSheet.create({
