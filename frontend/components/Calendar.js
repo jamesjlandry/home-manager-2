@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import WeeklyCalendar from 'react-native-weekly-calendar';
 
 
-export default function Calendar () {
+const Calendar = ({ navigation }) =>  {
 
     const sampleEvents = [
         { 'start': '2020-03-23 09:00:00', 'duration': '00:20:00', 'note': 'Walk my dog' },
@@ -20,10 +20,16 @@ export default function Calendar () {
     
       return (
         <View style={styles.container}>
+          <Button
+            title='Log Out'
+            onPress={() => navigation.navigate('Login')}
+          />
           <WeeklyCalendar events={sampleEvents} style={{ height: 400 }} />
         </View>
       );
 }
+
+export default Calendar
 
 const styles = StyleSheet.create({
     container: {

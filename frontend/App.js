@@ -15,13 +15,8 @@ const Stack = createStackNavigator(
   }
 )
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Calendar/>
-    </View>
-  );
-}
+export default createAppContainer(AppNavigator);
+
 
 const styles = StyleSheet.create({
   container: {

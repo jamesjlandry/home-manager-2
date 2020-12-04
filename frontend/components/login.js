@@ -3,7 +3,8 @@ import { StyleSheet, Text, View, TextInput,} from 'react-native';
 
 
 
-export default function Login() {
+
+const Login = ({ navigation })  => {
 
     
     
@@ -19,12 +20,14 @@ export default function Login() {
     
       return (
       <View style={styles.countainer}>
-            <TextInput>
-
-            </TextInput>
-            <TextInput>
-
-            </TextInput>
+            <Button
+                title="Log in"
+                onPress={()=> navigation.navigate('Home')}
+            />
+            <Button 
+                title="Create Account"
+                onPress={() => navigation.navigate('SignUp')}
+            />
       </View>
       );
     }
@@ -40,4 +43,6 @@ export default function Login() {
             color: '#FFF',
         }
     })
+
+    export default  Login
     
