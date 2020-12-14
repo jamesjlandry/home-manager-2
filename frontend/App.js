@@ -6,6 +6,7 @@ import Login from './components/login.js';
 import Signup from './components/signup.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import 'react-native-gesture-handler'
 
 const Stack = createStackNavigator(
@@ -16,10 +17,21 @@ const Stack = createStackNavigator(
   }
 )
 
+const Drawer = createDrawerNavigator()
+
+CalendarOptions = () => {
+  return (
+    <Drawer.Navigator>
+      <Drawer.Screen name="Appointments" component={Calendar}/>
+      <Drawer.Screen />
+    </Drawer.Navigator>
+  )
+}
+
 
 export default function App() {
   return <NavigationContainer>{
-      
+
     }</NavigationContainer>;
 }
 
