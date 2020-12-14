@@ -6,6 +6,7 @@ import Login from './components/login.js';
 import Signup from './components/signup.js';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import 'react-native-gesture-handler'
 
 const Stack = createStackNavigator(
   {
@@ -17,7 +18,9 @@ const Stack = createStackNavigator(
 
 
 export default function App() {
-  return <NavigationContainer>{/*...*/}</NavigationContainer>;
+  return <NavigationContainer>{
+      
+    }</NavigationContainer>;
 }
 
 
