@@ -18,8 +18,8 @@ const Drawer = createDrawerNavigator()
 
 
 export default function App() {
-  return <NavigationContainer>{
-       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+  return <NavigationContainer>
+       
         
           <Drawer.Navigator>
           <Drawer.Screen name="Appointments" component={Calendar}/>
@@ -29,10 +29,9 @@ export default function App() {
           <Drawer.Screen name="Projects" component={Calendar}/>
           <Drawer.Screen name="All" component={Calendar}/>
         </Drawer.Navigator>
-         {/* <Calendar/> */}
-       </View>
+      
        
-    }</NavigationContainer>;
+    </NavigationContainer>;
 }
 
 
