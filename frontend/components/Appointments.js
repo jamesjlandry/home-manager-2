@@ -3,18 +3,18 @@ import { StyleSheet, View } from 'react-native';
 import WeeklyCalendar from 'react-native-weekly-calendar';
 
 
-const Calendar = ({ props }) =>  {
+const Appointments = () =>  {
 
     
       return (
         <View style={styles.container}>
         
-          <WeeklyCalendar events={} style={{ height: 500 }} />
+          <Calendar  />
         </View>
       );
 }
 
-export default Calendar
+export default Appointments
 
 const styles = StyleSheet.create({
     container: {
@@ -24,4 +24,3 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
     }
   });
-
